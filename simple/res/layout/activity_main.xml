@@ -1,0 +1,72 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:paddingLeft="40px"
+        android:paddingRight="20px"
+        android:paddingStart="30px"
+        android:background="#aaaaaa"
+        android:layout_marginLeft="59px"
+        android:layout_marginTop="56px"
+        android:textSize="28px"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView1"
+        android:layout_marginLeft="62px"
+        android:layout_marginTop="126px"
+        android:paddingEnd="50px"
+        android:background="#aaaaaa"
+        android:textSize="28px"
+        android:layout_toRightOf="@+id/textView1"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView2"
+        android:layout_marginTop="140px"
+          android:background="#aaaaaa"
+          android:paddingRight="53px"
+        android:textSize="28px"
+        android:layout_toLeftOf="@+id/textView2"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="54px"
+        android:textSize="28px"
+             android:background="#aaaaaa"
+             android:paddingBottom="33px"
+        android:layout_marginLeft="18px"
+        android:layout_toRightOf="@+id/textView2"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/button"
+        android:onClick="button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#a7d8a8"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:textSize="28px"
+        android:padding="20px"
+        android:text="打开第二个activity" />
+
+</RelativeLayout>
