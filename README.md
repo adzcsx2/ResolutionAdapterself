@@ -16,4 +16,4 @@ width
 ，所有View的宽高间距等用PX为单位 。
 标准间距： 720P : 1dp = 2px;
 TextView: android:textSize="28px" 
-Button等自带padding控件,无法自动适配padding,需要手动设置width和height来满足需求。
+Button等自带padding控件,无法自动适配padding,需要手动设置width和height来满足需求。.
