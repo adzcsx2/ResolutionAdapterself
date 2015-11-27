@@ -1,8 +1,8 @@
 package com.example.demo;
 
-
 import android.content.Context;
 import android.util.DisplayMetrics;
+import android.util.Log;
 
 /**
  * 屏幕适配
@@ -16,7 +16,6 @@ public class ResolutionUtil {
 	
 	/**
 	 * 设备屏幕的基准宽度,高度
-	 * 1dp = 2px
 	 */
 	public static final int WINDOWS_STANDARD_SIZE_WIDTH = 720;
 	public static final int WINDOWS_STANDARD_SIZE_HIGH = 1280;
@@ -30,6 +29,8 @@ public class ResolutionUtil {
 	 * 标准缩放大小
 	 */
 	private static final float DEFAULTFONTDESITY = 1.0F;
+
+	private static final String TAG = "ResolutionUtil";
 	
 	/**
 	 * 屏幕密度
@@ -74,6 +75,7 @@ public class ResolutionUtil {
 		this.deviceHeight = dm.heightPixels;
 		density = dm.densityDpi;
 		fontDesity = dm.scaledDensity;
+		Log.e(TAG,"deviceWidth : "+deviceWidth+"     "+"scaleHeight : "+deviceHeight);
 		if(deviceWidth > deviceHeight){
 			scaleWidth = (float)deviceWidth / WINDOWS_STANDARD_SIZE_HIGH;
 			scaleHeight = (float)deviceHeight / WINDOWS_STANDARD_SIZE_WIDTH;
@@ -81,6 +83,7 @@ public class ResolutionUtil {
 		}else{
 			scaleWidth = (float)deviceWidth / WINDOWS_STANDARD_SIZE_WIDTH;
 			scaleHeight = (float)deviceHeight / WINDOWS_STANDARD_SIZE_HIGH;
+			Log.e(TAG,scaleWidth+"   asd"+scaleHeight);
 		}
 		
 	}

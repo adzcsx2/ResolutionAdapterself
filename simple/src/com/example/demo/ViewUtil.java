@@ -4,14 +4,12 @@ import java.util.List;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
-import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.ViewGroup.MarginLayoutParams;
 import android.view.ViewTreeObserver;
 import android.view.ViewTreeObserver.OnGlobalLayoutListener;
 import android.widget.TextView;
-
 
 /**
  * 跟View有关的Util 功能1、屏幕适配
@@ -20,17 +18,19 @@ import android.widget.TextView;
  * 
  */
 @SuppressLint("NewApi")
-//(if use padding) api 16+ 
+// api 16+
 public class ViewUtil {
 	private static ResolutionUtil resolutionUtil;
 	private static MarginLayoutParams layoutParams;
 	private static List<View> convertViewList;
 
 	/**
-	 * 屏幕适配(View绘制之后)
+	 * 屏幕适配
 	 * 
 	 * @param context
-	 * @param viewGroup
+	 * @param view
+	 * @param containPadding
+	 *            padding属性是在view绘制之后获取。假如在listView设为true，可能出现复用问题。
 	 */
 	public static void resolutionByViewGroup(Context context, View view,
 			boolean containPadding) {
@@ -55,10 +55,12 @@ public class ViewUtil {
 	}
 
 	/**
-	 * 屏幕适配(View绘制之后)
+	 * 屏幕适配
 	 * 
 	 * @param context
 	 * @param view
+	 * @param containPadding
+	 *            控件是否含padding
 	 */
 	public static void resolutionByView(Context context, final View view,
 			boolean containPadding) {
@@ -75,12 +77,18 @@ public class ViewUtil {
 
 	private static void LayoutParamsResolution(final View view,
 			MarginLayoutParams layoutParam, boolean containPadding) {
-		Log.e("aaa", layoutParams.width+"");
-		Log.e("bbb", layoutParams.height+"");
+		// // padding
+		// int paddingLeft = view.getPaddingLeft();
+		// int paddingTop = view.getPaddingTop();
+		// int paddingRight = view.getPaddingRight();
+		// int paddingBottom = view.getPaddingBottom();
+		// view.setPadding(resolutionUtil.px2dp2pxWidth(paddingLeft),
+		// resolutionUtil.px2dp2pxWidth(paddingTop),
+		// resolutionUtil.px2dp2pxWidth(paddingRight),
+		// resolutionUtil.px2dp2pxWidth(paddingBottom));
+		// margin、width、height
 		int width = resolutionUtil.px2dp2pxWidth(layoutParams.width);
 		int height = resolutionUtil.px2dp2pxWidth(layoutParams.height);
-		Log.e("aaa222", width+"");
-		Log.e("bbb222", height+"");
 		if (width > 0) {
 			layoutParams.width = width;
 		}
