@@ -8,20 +8,20 @@
 #####Button等自带padding控件，无法自动适配padding，需要手动设置width和height来满足需求。<br>
 
 
-####目前支持：<br>
+####·目前支持：<br>
 #####LinearLayout <br>
 #####RelativeLayout<br>
 #####FrameLayout<br>
-####支持的属性：<br>
+####·支持的属性：<br>
 #####Width<br>
 #####Height<br>
 #####Margin<br>
 #####Padding<br>
 #####TextSize<br>
 
-####Eclipse中选择720*1280布局<br>
+####·Eclipse中选择720*1280布局<br>
 ![](https://github.com/adzcsx2/android-autoAdapt/raw/master/11.png)
-####效果如下：<br>
+####·效果如下：<br>
 ![](https://github.com/adzcsx2/android-autoAdapt/raw/master/22.png)
 
 [我的博客](http://blog.csdn.net/adzcsx2)
