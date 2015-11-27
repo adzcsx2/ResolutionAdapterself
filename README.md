@@ -1,7 +1,19 @@
-# ResolutionAdapterself
+# android è‡ªåŠ¨é€‚é…æ‰€æœ‰åˆ†è¾¨ç‡
 
-»ùÓÚ720P(720*1280)×ÔĞĞÊÊÅäµÄBaseActivity(²»°üÀ¨ListView£¬ºÍ¶¯Ì¬ÊµÏÖµÄ¿Ø¼ş¡£ËùÓĞ·Ç¿Ø¼şĞèÒª×ÔĞĞÓÅ»¯ÊÊÅä
-£¬ËùÓĞViewµÄ¿í¸ß¼ä¾àµÈÓÃPXÎªµ¥Î» ¡£
-±ê×¼¼ä¾à£º 720P : 1dp = 2px;
+åŸºäº720P(720*1280)è‡ªè¡Œé€‚é…çš„BaseActivity(ListViewå’Œè‡ªå®šä¹‰æ§ä»¶è¯·å‚ç…§DEMO)
+
+ç›®å‰æ”¯æŒï¼š
+LinearLayout
+RelativeLayout
+FrameLayout
+æ”¯æŒçš„å±æ€§ï¼š
+Margin
+Padding
+Textsize
+height
+width
+
+ï¼Œæ‰€æœ‰Viewçš„å®½é«˜é—´è·ç­‰ç”¨PXä¸ºå•ä½ ã€‚
+æ ‡å‡†é—´è·ï¼š 720P : 1dp = 2px;
 TextView: android:textSize="28px" 
-ButtonµÈ×Ô´øpadding¿Ø¼ş,ÎŞ·¨ÊÊÅäpadding,ĞèÒªÔÚxmlÖ¸Ã÷padding»òwidth or height¡£
+Buttonç­‰è‡ªå¸¦paddingæ§ä»¶,æ— æ³•è‡ªåŠ¨é€‚é…padding,éœ€è¦æ‰‹åŠ¨è®¾ç½®widthå’Œheightæ¥æ»¡è¶³éœ€æ±‚ã€‚
